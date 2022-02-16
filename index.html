@@ -1,13 +1,127 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
  <head>
    <title>Angel Roman's Portfolio</title>
    <link href="style.css" rel="stylesheet">
+   <script src="script.js" defer></script>
  </head>
+
+
+
 <body>
-  <h1>Angel Roman</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+
+  <!--  Nav Section  -->
+
+  <div class="nav">
+    <a href="#" class="name">Angel Roman</a>
+    <ul>
+      <a href="#"><li>About</li></a>
+      <a href="#"><li>Portfolio</li></a>
+      <a href="#"><li>Contact</li></a>
+      <a href="#"><li>Resume</li></a>
+
+    </ul>
+  </div>
+
+
+  <!--    Main Section    -->
+  <div class="main">
+    <h1 id="text">Angel Roman</h1>
+    <img src="stars.png" id="stars">
+    <img src="moon.png" id="moon">
+    <img src="middle.png" id="middle">
+    <img src="front.png" id="front">
+  </div>
+
+  <!--      About Me Section      -->
+
+  <div class="about">
+    <div class="aboutMe">
+      <h1>About Me</h1>
+      <p>Hello! My name is Angel and I enjoy creating things that live on the internet. 
+        My interest in web development started back in 2012 when I decided to try editing custom
+        Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
+      <br>
+      <br>
+        Fast-forward to today, and I've had the privilege of working at an advertising agency, a start-up, a huge corporation, 
+        and a student-led design studio. My main focus these days is building accessible, inclusive products and digital 
+        experiences at Upstatement for a variety of clients. 
+      <br><br>
+        I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React
+      <br><br>
+        Here are a few technologies I've been working with recently:
+    </p>
+      <img class="stack" src="htmllogo.png">
+    </div>
+  </div>
+
+
+    <!--     Portfolio Section     -->
+  <div class="portfolioSection">
+    <h1>Projects</h1>
+      <div class="project1">
+        <img src="underConstruction.jpg">
+      </div>
+      <div class="project2">
+        <img src="underConstruction.jpg">
+      </div>
+      <div class="project3">
+        <img src="underConstruction.jpg">
+      </div>
+      <div class="project4">
+        <img src="underConstruction.jpg">
+      </div>
+      <div class="project5">
+        <img src="underConstruction.jpg">
+      </div>
+      <div class="project6">
+        <img src="underConstruction.jpg">
+      </div>
+  </div>
+
+  <!--   Testimonials Section   -->
+    
+  <div class="testimonials">
+    <h1>Testimonials</h1>
+    <div class="testimonial1">
+      <img src="testimonia.png">
+    </div>
+    <div class="testimonial2">
+      <img src="testimonia.png">
+    </div>
+    <div class="testimonial3">
+      <img src="testimonia.png">
+    </div>
+    <div class="testimonial4">
+      <img src="testimonia.png">
+    </div>
+  </div>
+
+      <!--   Contact Section   -->
+  <div class="contactSection">
+    <h2>Contact Me</h2>
+    <h1>Get In Touch</h1>
+    <p>Dropping a line to say "good day", askf for my resume or see if we can build something amazing together? I'd love to hear from you!
+      <br>
+      <br>
+      Fill in your info in the form below and I look forward to hearing from you.
+    </p>
+    <form>
+      <input type="text" name="name" required="required" placeholder="Name">
+      <input type="email" name="_replyto" required="required" placeholder="Email">
+      <input type="textarea" class="textbox" name="message" required="required" placeholder="Message">
+      <button class="contactButton">Send Email</button>
+    </form>
+
+  </div>
+
+  <!--   Footer Section  -->
+  <div class="footer">
+    <p>Designed & Built by Angel Roman ©2022</p>
+  </div>
+  
+  
 </body>
  
 </html>

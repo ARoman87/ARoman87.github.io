@@ -4,7 +4,213 @@
 }
 
 body {
-  background-color: black;
   color: white;
   text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  background-color: black;
+}
+
+/*   Nav Section */
+
+.nav {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav ul li {
+  list-style: none;
+  color: white;
+  padding: 6px 15px;
+  font-size: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/*  Main Section - Page with parallax */
+
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #510d39, transparent);
+  z-index: 1000;
+}
+
+.main h1 {
+  z-index: 2;
+  position: absolute;
+  white-space: nowrap;
+  font-size: 6rem;
+  z-index: 4;
+  padding-left: 100px;
+  padding-bottom: 100px;
+}
+
+.main img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#stars {
+  z-index: 1;
+}
+
+#moon {
+  z-index: 2;
+}
+
+#middle {
+  z-index: 3;
+}
+
+#front {
+  z-index: 4;
+}
+
+/* About Me Section  */
+
+.about {
+  height: 100vh;
+  background: linear-gradient(#510d39, black, black);
+  z-index: 1000;
+}
+
+.about h1 {
+  padding-top: 200px;
+}
+.about p {
+  width: 800px;
+  margin: auto;
+  text-align: justify;
+  margin-top: 50px;
+}
+
+.stack {
+  width: 400px;
+  padding-top: 15px;
+}
+
+/*  Portfolio Section  */
+
+.portfolioSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(black, black, black, black, #332b7e);
+}
+
+.project1,
+.project2,
+.project3,
+.project4,
+.project5,
+.project6 {
+  border: solid 1px white;
+  margin: 20px;
+}
+
+.portfolioSection img {
+  width: 800px;
+}
+
+/*  Testimonial Section  */
+
+.testimonials {
+  background: linear-gradient(#332b7e, #4d0d36);
+}
+
+.testimonials h1 {
+  padding: 50px;
+}
+
+.testimonials img {
+  margin: 20px;
+  width: 50%;
+}
+
+/*  Contact Section  */
+
+.contactSection {
+  height: 100vh;
+  padding-top: 100px;
+  background: linear-gradient(#4d0d36, black);
+}
+
+.contactSection h2,
+h1,
+p {
+  padding: 20px;
+}
+
+.contactSection p {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.contactSection input {
+  height: 50px;
+  width: 800px;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.contactSection form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactSection button {
+  height: 20px;
+  width: 100px;
+  margin: 20px;
+}
+
+.contactSection .textbox {
+  height: 200px;
+}
+
+input::placeholder {
+  padding-left: 10px;
+}
+
+/*  Footer Section  */
+
+.footer {
+  height: 50px;
+  padding-top: 50px;
 }
