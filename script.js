@@ -8,5 +8,5 @@ window.addEventListener('scroll', function(){
     let value = window.scrollY;
     moon.style.top = value * 1.05 + 'px';
     middle.style.top = value * 0.1 + 'px';
-    text = value * 1.5 + 'px';
+    text.style.left = value * 1.5 + 'px';
 })
