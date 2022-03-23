@@ -168,6 +168,7 @@ body {
   height: 100vh;
   padding-top: 100px;
   background: linear-gradient(#4d0d36, black);
+  font-family: "Courier New", Courier, monospace;
 }
 
 .contactSection h2,
@@ -186,6 +187,7 @@ p {
   width: 800px;
   margin: 20px;
   font-size: 20px;
+  font-family: inherit;
 }
 
 .contactSection form {
@@ -202,10 +204,19 @@ p {
 
 .contactSection .textbox {
   height: 200px;
+  width: 800px;
+  font-size: 20px;
+  font-family: inherit;
+  margin: 20px;
 }
 
-input::placeholder {
+input {
   padding-left: 10px;
+}
+
+.textbox {
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 /*  Footer Section  */
