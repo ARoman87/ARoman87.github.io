@@ -182,12 +182,13 @@ p {
   margin: 0 auto;
 }
 
-.contactSection input {
+.contactSection .inputClass {
   height: 50px;
   width: 800px;
   margin: 20px;
   font-size: 20px;
   font-family: inherit;
+  padding-left: 10px;
 }
 
 .contactSection form {
@@ -196,10 +197,10 @@ p {
   align-items: center;
 }
 
-.contactSection button {
-  height: 20px;
-  width: 100px;
-  margin: 20px;
+.submitButton {
+  width: 150px;
+  height: 30px;
+  font-size: inherit;
 }
 
 .contactSection .textbox {
@@ -208,10 +209,6 @@ p {
   font-size: 20px;
   font-family: inherit;
   margin: 20px;
-}
-
-input {
-  padding-left: 10px;
 }
 
 .textbox {
