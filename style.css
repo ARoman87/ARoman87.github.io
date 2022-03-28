@@ -149,17 +149,120 @@ body {
 
 /*  Testimonial Section  */
 
-.testimonials {
+.testimonialContainer {
   background: linear-gradient(#332b7e, #4d0d36);
+  width: 100%;
+  position: relative;
 }
 
-.testimonials h1 {
+.testimonialHeading {
   padding: 50px;
 }
 
-.testimonials img {
-  margin: 20px;
-  width: 50%;
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.wrapper .testimonialContainer {
+  position: relative;
+  width: 400px;
+  color: #fff;
+  background: #222;
+  margin: 40px 10px;
+  padding: 30px 20px;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+
+.wrapper .testimonialContainer .testimonial {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -10%;
+  width: 100%;
+  display: block;
+}
+
+.wrapper .testimonialContainer .testimonial .testimonialImage {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  border: 8px solid #070c0d;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.wrapper .testimonialContainer .testimonial .testimonialImage img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.wrapper .testimonialContainer .testimonial .testimonialImage:hover img {
+  filter: saturate(140%);
+  transform: scale(0.95);
+}
+
+.wrapper .testimonialContainer .testimonial h2 {
+  padding: 10px 0;
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.wrapper .testimonialContainer p {
+  margin-top: 100px;
+  padding: 0 8px;
+}
+
+.rodrigoTest {
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+
+.javierTest {
+  margin-bottom: 15px;
+}
+
+.wrapper .testimonialContainer .left {
+  font-size: 30px;
+  display: block;
+  text-align: left;
+  color: #3b7cf5;
+}
+
+.wrapper .testimonialContainer .right {
+  font-size: 30px;
+  display: block;
+  text-align: right;
+  color: #3b7cf5;
+}
+
+.wrapper .testimonialContainer .social {
+  width: 100%;
+}
+
+.wrapper .testimonialContainer .social i {
+  font-size: 1.2em;
+  color: #fff;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.085);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper .testimonialContainer .social i:hover {
+  background: #3b7cf5;
 }
 
 /*  Contact Section  */

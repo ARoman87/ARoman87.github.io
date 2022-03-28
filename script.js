@@ -10,3 +10,5 @@ window.addEventListener('scroll', function(){
     middle.style.top = value * 0.1 + 'px';
     text.style.left = value * 1.5 + 'px';
 })
+
+
